@@ -2,13 +2,13 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var webpack = require('webpack')
-var merge = require('webpack-merge')
+var merge = require('webpack-merge')//合并webpack配置插件
 var baseWebpackConfig = require('./webpack.base.conf')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')//提取插入样式插件,把额外的数据加到编译好的文件中
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var env = config.build.env
 
-var webpackConfig = merge(baseWebpackConfig, {
+var webpackConfig = merge(baseWebpackConfig, {//合并共用配置
   module: {
     loaders: utils.styleLoaders({ sourceMap: config.build.productionSourceMap, extract: true })
   },
@@ -40,7 +40,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({//配置将打包的js路径插入到filename的html模板中
       filename: config.build.index,
       template: 'index.html',
       inject: true,
