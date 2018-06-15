@@ -250,7 +250,7 @@ location / {
  	  	  		4.7.1.1 eslint,css,json babel等
  	  4.8 vue
 
-###各个环境基本配置项目
+### 各个环境基本配置项目
 	1. 入口文件entry:[string | array | object]
 	2. 输出文件output:
 		output.path:[string]  //路径
