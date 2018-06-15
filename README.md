@@ -108,7 +108,7 @@ location / {
 
 
 
-2.### 前端搭建
+2. 前端搭建
 	cmd 进入frontEnd文件夹
 	运行npm install
 	之后运行npm run dev
@@ -118,9 +118,8 @@ location / {
 
 
 
-3. #### 
-   ########## 建立本地模板数据库：复制用数据库客户端平台navicat在本地数据库打开install.sql文件，运行sql代码建立本地数据库
-   ########## 配置数据库文件：php/config/database.php映射到本地数据库，填写本地数据库的地址
+3. 建立本地模板数据库：复制用数据库客户端平台navicat在本地数据库打开install.sql文件，运行sql代码建立本地数据库
+   配置数据库文件：php/config/database.php映射到本地数据库，填写本地数据库的地址
    							 // 服务器地址
 						    'hostname'       => '127.0.0.1',
 						    // 数据库名
