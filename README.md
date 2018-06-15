@@ -264,7 +264,7 @@ location / {
 	4. 重定向：resolve
 	5. 插件：plugins:
 
-####vue运行逻辑
+#### vue运行逻辑
 	1. 源代码入口文件为main.js
 	   1.1 引入vue web依赖的模块
 	   		1.1.1   import 'babel-polyfill' //配合Babel(只转化ES句法)使用，用于将ES6的新特性方法转化为浏览器可用的ES5JavaScript
